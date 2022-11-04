@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymelef.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>User Register Page</h3>
+
+<form action="save" method="POST">
+
+<pre>
+NAME :    <input type="text" name="name"/>
+EMAIL :   <input type="text" name="email"/>
+PASSWORD :<input type="password" name="password"/>
+ROLES :   <input  type="checkbox" name="roles" value="ADMIN">ADMIN
+          <input  type="checkbox" name="roles" value="ADMIN">EMPLOYEE
+
+<input type="submit" value="Add User"/>
+</pre>
+
+
+
+</form>
+<div th:text="${message}"></div>
+</body>
+</html>
